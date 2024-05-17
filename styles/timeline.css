@@ -1,0 +1,19 @@
+.facebook-story-container {
+  display: grid;
+  grid-template-columns: 140.625px 140.625px 140.625px 140.625px;
+  column-gap: 5px;
+}
+
+.create-story-image {
+  width: 100%;
+  height: 203px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.story-content {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
