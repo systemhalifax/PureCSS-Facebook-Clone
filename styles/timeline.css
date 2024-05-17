@@ -2,20 +2,41 @@
   display: grid;
   grid-template-columns: repeat(4, 140.625px); /* Four columns with specific width */
   grid-auto-rows: 252px; /* Rows with specific height */
-  column-gap: 5px;
+  column-gap: 8px;
 }
 
 .create-story-column {
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  position: relative;
+  cursor: pointer;
 }
 
-.create-story-image {
+.user-image-story-container {
+  position: relative;
+  overflow: hidden; /* Ensures that the image doesn't overflow its container */
+  width: fit-content; /* Adjust based on your image dimensions */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.create-story-column:hover .user-story-image {
+  filter: grayscale(30%);
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
+}
+
+.user-story-image {
   width: 100%;
   height: 203px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: transform 0.3s ease,
+  filter 0.3s ease,
+  shadow 0.3s ease; /* Smooth transition */
 }
 
 .create-story {
@@ -27,12 +48,48 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 0 4px 0px -2px rgba(0, 0, 0, 0.15);
+  margin-top: -3px;
+  position: relative;
 }
 
-.create-story span {
+.create-story-span {
   font-weight: 500;
   font-size: 12px;
   margin-top: 17px;
+}
+
+.add-story-container {
+  background-color: white;
+  display: inline-block;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 50%;
+  position: absolute;
+  right: 33%;
+  top: -20px;
+}
+
+.add-story {
+  background-color: rgb(32, 110, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.add-icon {
+  color: white;
+  font-size: 29px;
+}
+
+.friends-story-container {
+  position: relative;
+  overflow: hidden; /* Ensures that the image doesn't overflow its container */
+  width: fit-content; /* Adjust based on your image dimensions */
+  border-radius: 10px;
 }
 
 .story-content {
@@ -40,4 +97,63 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  transition: transform 0.3s ease,
+  filter 0.3s ease,
+  shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.friends-story-container:hover .story-content {
+  transform: scale(1.03);
+  filter: grayscale(40%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
+}
+
+.profile-picture-story-container {
+  background-color: rgb(32, 110, 255);
+  display: inline-block;
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.friends-story-profile-picture {
+  width: 34px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.friends-profile-name {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 9px;
+  left: 9px;
+  cursor: pointer;
+}
+
+.next-story-container {
+  background-color: white;
+  display: inline-block;
+  border-radius: 25px;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+  bottom: 40%;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.next-story-container:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.next-story-icon {
+  width: 50px;
 }
