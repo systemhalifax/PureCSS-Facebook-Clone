@@ -1,3 +1,10 @@
+/* main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+} */
+
 /* Facebook Story Feature */
 
 .stories {
@@ -73,7 +80,7 @@
 }
 
 .stories__add-button {
-  background-color: rgb(32, 110, 255);
+  background-color: #206eff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,7 +119,7 @@
 }
 
 .stories__profile-pic-wrapper {
-  background-color: rgb(32, 110, 255);
+  background-color: #206eff;
   display: inline-block;
   padding-top: 4px;
   padding-left: 4px;
@@ -149,11 +156,11 @@
   right: 10px;
   bottom: 40%;
   cursor: pointer;
-  transition: background-color 0.15s ease;
+  transition: background-color 0.3s ease;
 }
 
 .stories__next-wrapper:hover {
-  background-color: rgb(241, 241, 241);
+  background-color: #f1f1f1;
 }
 
 .stories__next-icon {
@@ -164,38 +171,78 @@
 
 /* Facebook Status Update Feature*/
 
-.status {
-  background-color: white;
+.status-update {
+  background-color: #fff;
   margin-top: 37px;
   width: 500px;
   border-radius: 7px;
-  box-shadow: 0px 0px 0.9px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.status__update-wrapper {
+.status-update__wrapper {
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  margin-left: 15px;
-  width: 468px;
-  border-bottom: 1px solid rgb(224, 224, 224);
-  padding-bottom: 12px;
-  padding-top: 12px;
+  margin: 20px 15px 5px;
+  width: calc(100% - 30px);
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 0;
 }
 
-.status__profile-pic {
+.status-update__profile-pic {
   width: 40px;
   border-radius: 50%;
+  cursor: pointer;
+  transition: filter 0.3s ease;
 }
 
-.status__input {
+.status-update__profile-pic:hover {
+  filter: grayscale(30%);
+}
+
+.status-update__input {
   font-size: 17px;
   width: 100%;
   border-radius: 40px;
   border: none;
-  background-color: rgb(240, 240, 240);
+  background-color: #f0f0f0;
   box-sizing: border-box;
   padding: 8px 12px;
   margin-left: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.status-update__input:hover {
+  background-color: #e4e4e4;
+}
+
+.status-update__media-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-update__media-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding-left: 23px;
+  padding-right: 23px;
+  border-radius: 7px;
+  transition: background-color 0.3s ease;
+}
+
+.status-update__media-item:hover {
+  background-color: #f0f0f0;
+}
+
+.status-update__media-icon {
+  width: 24px;
+}
+
+.status-update__media-text {
+  font-size: 14px;
+  color: #6b6b6b;
 }
