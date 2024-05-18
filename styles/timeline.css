@@ -1,11 +1,13 @@
-.facebook-story-container {
+/* Facebook Story Feature */
+
+.stories {
   display: grid;
   grid-template-columns: repeat(4, 140.625px); /* Four columns with specific width */
   grid-auto-rows: 252px; /* Rows with specific height */
   column-gap: 8px;
 }
 
-.create-story-column {
+.stories__create {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -14,7 +16,7 @@
   cursor: pointer;
 }
 
-.user-image-story-container {
+.stories__user-image-wrapper {
   position: relative;
   overflow: hidden; /* Ensures that the image doesn't overflow its container */
   width: fit-content; /* Adjust based on your image dimensions */
@@ -22,13 +24,13 @@
   border-top-right-radius: 10px;
 }
 
-.create-story-column:hover .user-story-image {
+.stories__create:hover .stories__user-image {
   filter: grayscale(30%);
   transform: scale(1.03);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
 }
 
-.user-story-image {
+.stories__user-image {
   width: 100%;
   height: 203px;
   object-fit: cover;
@@ -39,7 +41,7 @@
   shadow 0.3s ease; /* Smooth transition */
 }
 
-.create-story {
+.stories__create-details {
   background-color: white;
   display: flex;
   align-items: center;
@@ -52,13 +54,13 @@
   position: relative;
 }
 
-.create-story-span {
+.stories__create-text {
   font-weight: 500;
   font-size: 12px;
   margin-top: 17px;
 }
 
-.add-story-container {
+.stories__add-wrapper {
   background-color: white;
   display: inline-block;
   padding-top: 4px;
@@ -70,7 +72,7 @@
   top: -20px;
 }
 
-.add-story {
+.stories__add-button {
   background-color: rgb(32, 110, 255);
   display: flex;
   align-items: center;
@@ -80,19 +82,19 @@
   border-radius: 50%;
 }
 
-.add-icon {
+.stories__add-icon {
   color: white;
   font-size: 29px;
 }
 
-.friends-story-container {
+.stories__item {
   position: relative;
   overflow: hidden; /* Ensures that the image doesn't overflow its container */
   width: fit-content; /* Adjust based on your image dimensions */
   border-radius: 10px;
 }
 
-.story-content {
+.stories__content-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -103,13 +105,13 @@
   cursor: pointer;
 }
 
-.friends-story-container:hover .story-content {
+.stories__item:hover .stories__content-image {
   transform: scale(1.03);
   filter: grayscale(40%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
 }
 
-.profile-picture-story-container {
+.stories__profile-pic-wrapper {
   background-color: rgb(32, 110, 255);
   display: inline-block;
   padding-top: 4px;
@@ -121,14 +123,14 @@
   left: 10px;
 }
 
-.friends-story-profile-picture {
+.stories__profile-pic {
   width: 34px;
   object-fit: cover;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.friends-profile-name {
+.stories__profile-name {
   font-size: 12px;
   font-weight: bold;
   color: white;
@@ -138,7 +140,7 @@
   cursor: pointer;
 }
 
-.next-story-container {
+.stories__next-wrapper {
   background-color: white;
   display: inline-block;
   border-radius: 25px;
@@ -150,10 +152,15 @@
   transition: background-color 0.15s ease;
 }
 
-.next-story-container:hover {
+.stories__next-wrapper:hover {
   background-color: rgb(241, 241, 241);
 }
 
-.next-story-icon {
+.stories__next-icon {
   width: 50px;
 }
+
+
+
+/* Facebook Status Update Feature*/
+
