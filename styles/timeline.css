@@ -241,3 +241,65 @@
   margin-top: 14px;
   margin-bottom: 14px;
 }
+
+
+
+/* Facebook News Feed Feature */
+
+.news-feed {
+  width: 500px;
+}
+
+.news-feed__author-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-feed__author-info-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 13px;
+}
+
+.news-feed__info-wrapper {
+  margin-left: 8px;
+}
+
+.news-feed__author-image {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.news-feed__author-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.news-feed__date-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #6b6b6b;
+  line-height: 20px;
+}
+
+.news-feed__friends-icon {
+  width: 14px;
+}
+
+.news-feed__post-options-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+  gap: 16px;
+}
+
+.news-feed__hide-icon {
+  width: 20px;
+}
+.news-feed__save-icon {
+  width: 23px;
+}
