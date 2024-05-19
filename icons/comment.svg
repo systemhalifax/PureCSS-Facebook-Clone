@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <title>comment-1</title>
+  <desc>Created with Sketch Beta.</desc>
+  <defs/>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Icon-Set" transform="translate(-100.000000, -255.000000)" fill="#000000">
+      <path d="M 116 261 C 114.832 261 113.704 261.136 112.62 261.367 L 107.912 258.537 L 107.975 263.176 C 104.366 265.346 102 268.934 102 273 C 102 279.627 108.268 285 116 285 C 123.732 285 130 279.627 130 273 C 130 266.372 123.732 261 116 261 Z M 116 287 C 107.164 287 100 280.731 100 273 C 100 268.581 102.345 264.646 106 262.081 L 106 255 L 113.009 259.253 C 113.979 259.093 114.977 259 116 259 C 124.836 259 132 265.268 132 273 C 132 280.731 124.836 287 116 287 Z" id="comment-1" style="fill: rgb(107, 107, 107); transform-origin: 116px 271px;" transform="matrix(-1, 0, 0, -1, 0, 0)"/>
+    </g>
+  </g>
+</svg>

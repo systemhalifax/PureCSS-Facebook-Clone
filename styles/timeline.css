@@ -247,19 +247,25 @@
 /* Facebook News Feed Feature */
 
 .news-feed {
+  background-color: #fff;
   width: 500px;
+  margin-top: 13px;
+  padding-top: 4px;
+  border-radius: 7px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .news-feed__author-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
 
 .news-feed__author-info-wrapper {
   display: flex;
   align-items: center;
-  margin-left: 13px;
+  margin-left: 16px;
 }
 
 .news-feed__info-wrapper {
@@ -294,12 +300,86 @@
   display: flex;
   align-items: center;
   margin-right: 25px;
-  gap: 16px;
+  gap: 14px;
 }
 
 .news-feed__hide-icon {
   width: 20px;
 }
+
 .news-feed__save-icon {
   width: 23px;
+}
+
+.news-feed__caption {
+  text-wrap: balance;
+  font-size: 14px;
+  margin: 9px 0px 0px 16px;
+  line-height: 20px;
+}
+
+.news-feed__content-image {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 9px;
+}
+
+.news-feed__engagement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 16px 0px 16px;
+}
+
+.news-feed__reactions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.news-feed__reactions-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.news-feed__laughing-icon {
+  width: 18px;
+  margin-right: -1px;
+  z-index: 1;
+  border: 1px solid white;
+}
+
+.news-feed__likes-icon {
+  width: 18px;
+}
+
+.news-feed__reaction-count {
+  font-size: 15px;
+  color: gray;
+}
+
+.news-feed__social-sharing {
+  display: flex;
+  gap: 8px;
+}
+
+.news-feed__comments-wrapper,
+.news-feed__sharing-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.news-feed__comments-count,
+.news-feed__shared-count {
+  font-size: 14px;
+  color: gray;
+}
+
+.news-feed__comments-icon {
+  width: 16px;
+}
+
+.news-feed__share-icon {
+  width: 20px;
 }
