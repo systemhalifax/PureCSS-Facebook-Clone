@@ -429,3 +429,48 @@
   font-weight: 500;
   color: gray;
 }
+
+.news-feed__tooltip {
+  border: 1px solid red;
+  width: 400px;
+}
+
+.news-feed__tooltip-info {
+  display: flex;
+}
+
+.news-feed__author-tooltip-image {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.news-feed__tooltip-page-wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.news-feed__tooltip-identity-wrapper {
+  display: flex;
+  height: 20px;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+.news-feed__tooltip-identity-wrapper p {
+  text-wrap:balance;
+}
+
+
+.news-feed__tooltip-location-wrapper {
+  display: flex;
+  gap: 5px;
+
+}
+
+.news-feed__tooltip-followers-wrapper {
+  display: flex;
+  gap: 5px;
+
+}
