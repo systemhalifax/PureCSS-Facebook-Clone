@@ -250,26 +250,32 @@
   background-color: #fff;
   width: 500px;
   margin-top: 13px;
-  padding: 2px 0px;
+  padding: 2px 0;
   border-radius: 7px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.news-feed__header, .news-feed__engagement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
 }
 
 .news-feed__author-info {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
 }
 
-.news-feed__author-info-wrapper {
+.news-feed__author-details {
+  margin-left: 8px;
+}
+
+.news-feed__author-name-wrapper {
   display: flex;
   align-items: center;
-  margin-left: 16px;
-}
-
-.news-feed__info-wrapper {
-  margin-left: 8px;
+  gap: 4px;
+  margin-bottom: 4px;
 }
 
 .news-feed__author-image {
@@ -279,11 +285,10 @@
 }
 
 .news-feed__author-name {
-  display: inline-block;
   font-size: 14px;
   font-weight: bold;
-  transition: text-decoration 0.3s ease;
   cursor: pointer;
+  transition: text-decoration 0.3s ease;
 }
 
 .news-feed__author-name:hover {
@@ -291,112 +296,97 @@
 }
 
 .news-feed__verified-icon {
-  width: 12px;
+  width: 14px;
 }
 
-.news-feed__date-wrapper {
+.news-feed__date {
   display: flex;
   align-items: center;
   gap: 5px;
   font-size: 12px;
   color: #6b6b6b;
-  line-height: 20px;
 }
 
-.news-feed__friends-icon {
+.news-feed__date-icon {
   width: 14px;
 }
 
-.news-feed__post-options-wrapper {
+.news-feed__post-options {
   display: flex;
-  align-items: center;
-  margin-right: 18px;
+  gap: 8px;
 }
 
-.news-feed__hide-icon {
-  padding: 9px;
-  border-radius: 50%;
+.news-feed__action-icon {
   width: 20px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.news-feed__save-icon {
   padding: 7px;
   border-radius: 50%;
-  width: 23px;
-  transition: background-color 0.3s ease;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.news-feed__hide-icon:hover,
-.news-feed__save-icon:hover {
+.news-feed__action-icon:hover {
   background-color: #f0f0f0;
 }
 
 .news-feed__caption {
-  text-wrap: balance;
+  margin: 0 16px 0;
   font-size: 14px;
-  margin: 9px 0px 0px 16px;
   line-height: 20px;
 }
 
-.news-feed__content-image {
+.news-feed__image {
   width: 100%;
   object-fit: cover;
   margin-top: 9px;
 }
 
-.news-feed__engagement {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5px 16px 0px 16px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #e0e0e0;
-}
-
 .news-feed__reactions {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
 }
 
-.news-feed__reactions-wrapper {
+.news-feed__reaction-icons {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.news-feed__reaction-icon {
+  width: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
 }
 
 .news-feed__laughing-icon {
-  width: 18px;
-  margin-right: -1px;
-  z-index: 1;
-  border: 1px solid white;
+  left: 0;
+  z-index: 2;
 }
 
-.news-feed__likes-icon {
-  width: 18px;
+.news-feed__like-icon {
+  left: 18px;
+  z-index: 1;
 }
 
 .news-feed__reaction-count {
   font-size: 15px;
   color: gray;
+  margin-left: 36px;
 }
 
-.news-feed__social-sharing {
+.news-feed__engagement-details {
   display: flex;
-  gap: 8px;
+  gap: 16px;
 }
 
-.news-feed__comments-wrapper,
-.news-feed__sharing-wrapper {
+.news-feed__comments, .news-feed__shares {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
 }
 
-.news-feed__comments-count,
-.news-feed__shared-count {
+.news-feed__comments-count, .news-feed__shares-count {
   font-size: 14px;
   color: gray;
 }
@@ -405,37 +395,36 @@
   width: 16px;
 }
 
-.news-feed__share-icon {
+.news-feed__shares-icon {
   width: 20px;
 }
 
-.news-feed__post-engagement-options {
+.news-feed__interaction-options {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 2px 0px 0px 1px;
+  justify-content: space-around;
+  padding: 5px 0;
+  border-top: 1px solid #e0e0e0;
 }
 
-.news-feed__engagement-options {
+.news-feed__interaction-option {
   display: flex;
   align-items: center;
   padding: 5px 25px;
-  margin: 1px;
   gap: 6px;
   border-radius: 7px;
-  transition: background-color 0.3s ease;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.news-feed__engagement-options:hover {
+.news-feed__interaction-option:hover {
   background-color: #f0f0f0;
 }
 
-.news-feed__engagement-options img {
+.news-feed__interaction-icon {
   width: 20px;
 }
 
-.news-feed__engagement-options p {
+.news-feed__interaction-option p {
   font-size: 14px;
   font-weight: 500;
   color: gray;
