@@ -267,6 +267,15 @@
   align-items: center;
 }
 
+.news-feed__author-image-wrapper {
+  position: relative;
+}
+
+.news-feed__author-image-wrapper:hover .news-feed__tooltip {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
 .news-feed__author-details {
   margin-left: 8px;
 }
@@ -431,46 +440,116 @@
 }
 
 .news-feed__tooltip {
-  border: 1px solid red;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 2px;
+  position: absolute;
+  left: -190px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
 }
 
 .news-feed__tooltip-info {
   display: flex;
+  padding-top: 15px;
 }
 
-.news-feed__author-tooltip-image {
+.news-feed__tooltip-author-image {
   width: 96px;
   height: 96px;
   border-radius: 50%;
   object-fit: cover;
+  margin-left: 25px;
 }
 
-.news-feed__tooltip-page-wrapper {
+.news-feed__tooltip-details {
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+  row-gap: 27px;
+  margin-left: 15px;
 }
 
-.news-feed__tooltip-identity-wrapper {
+.news-feed__tooltip-author-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.news-feed__tooltip-details-item {
   display: flex;
+  align-items: center;
+}
+
+.news-feed__tooltip-details-text {
+  align-items: flex-start;
+}
+
+.news-feed__tooltip-details-item p {
+  font-size: 14px;
+  width: 200px;
+}
+
+.news-feed__tooltip-label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.news-feed__tooltip-icon {
   height: 20px;
-  margin-bottom: 20px;
-  gap: 5px;
+  margin-right: 10px;
 }
 
-.news-feed__tooltip-identity-wrapper p {
-  text-wrap:balance;
+.news-feed__tooltip-message-icon {
+  height: 20px;
+  margin-right: 10px;
 }
 
-
-.news-feed__tooltip-location-wrapper {
+.news-feed__tooltip-actions {
   display: flex;
-  gap: 5px;
-
+  gap: 8px;
+  margin: 15px 20px;
 }
 
-.news-feed__tooltip-followers-wrapper {
-  display: flex;
-  gap: 5px;
+.news-feed__tooltip-action {
+  position: relative;
+}
 
+.news-feed__tooltip-button {
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 16px;
+}
+
+.news-feed__tooltip-button--liked {
+  background-color: rgb(228, 228, 228);
+  color: black;
+  padding: 10px 40px 10px 70px;
+}
+
+.news-feed__tooltip-button--message {
+  background-color: #0866ff;
+  color: white;
+  padding: 10px 40px 10px 65px;
+}
+
+.news-feed__tooltip-button--more {
+  background-color: rgb(228, 228, 228);
+  color: black;
+}
+
+.news-feed__tooltip-icon-wrapper {
+  display: inline-block;
+  position: absolute;
+  left: 33%;
+  top: 25%;
+}
+
+.news-feed__tooltip-message-wrapper {
+  display: inline-block;
+  position: absolute;
+  left: 24%;
+  top: 25%;
 }

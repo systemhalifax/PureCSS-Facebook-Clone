@@ -81,7 +81,48 @@
     <section class="news-feed">
       <div class="news-feed__header">
         <div class="news-feed__author-info">
-          <img class="news-feed__author-image" src="images/elon-musk.jpg" alt="Author Image">
+          <div class="news-feed__author-image-wrapper">
+            <img class="news-feed__author-image" src="images/elon-musk.jpg" alt="Author Image">
+            <div class="news-feed__tooltip">
+              <div class="news-feed__tooltip-info">
+                <img class="news-feed__tooltip-author-image" src="images/elon-musk.jpg" alt="Author Image">
+                <div class="news-feed__tooltip-details">
+                  <p class="news-feed__tooltip-author-name">Elon Musk</p>
+                  <div class="news-feed__tooltip-details-item">
+                    <img class="news-feed__tooltip-icon" src="icons/page-info.png" alt="Page Info Icon">
+                    <p><span class="news-feed__tooltip-label">Page</span> · Public figure</p>
+                  </div>
+                  <div class="news-feed__tooltip-details-item tooltip__details-text">
+                    <img class="news-feed__tooltip-icon" src="icons/person.png" alt="Person Icon">
+                    <p>Founder, CEO of SpaceX, angel investor, Tesla Inc. CTO of X Corp, the Boring Company.</p>
+                  </div>
+                  <div class="news-feed__tooltip-details-item tooltip__details-text">
+                    <img class="news-feed__tooltip-icon" src="icons/location.png" alt="Location Icon">
+                    <p>California City, CA, United States, California</p>
+                  </div>
+                  <div class="news-feed__tooltip-details-item">
+                    <img class="news-feed__tooltip-icon" src="icons/followers.png" alt="Followers Icon">
+                    <span class="news-feed__tooltip-label">183.4M Followers</span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-feed__tooltip-actions">
+                <div class="news-feed__tooltip-action">
+                  <button class="news-feed__tooltip-button news-feed__tooltip-button--liked">Liked</button>
+                  <div class="news-feed__tooltip-icon-wrapper">
+                    <img class="news-feed__tooltip-like-icon" src="icons/like.png" alt="Like Icon">
+                  </div>
+                </div>
+                <div class="news-feed__tooltip-action">
+                  <button class="news-feed__tooltip-button news-feed__tooltip-button--message">Message</button>
+                  <div class="news-feed__tooltip-message-wrapper">
+                    <img class="news-feed__tooltip-message-icon" src="icons/messenger.svg" alt="Messenger Icon">
+                  </div>
+                </div>
+                <button class="news-feed__tooltip-button news-feed__tooltip-button--more">&bull;&bull;&bull;</button>
+              </div>
+            </div>
+          </div>
           <div class="news-feed__author-details">
             <div class="news-feed__author-name-wrapper">
               <p class="news-feed__author-name">Elon Musk</p>
@@ -138,33 +179,6 @@
         </div>
       </div>
     </section>
-    <div class="news-feed__tooltip">
-      <div class="news-feed__tooltip-info">
-        <img class="news-feed__author-tooltip-image" src="images/elon-musk.jpg">
-        <div>
-          <p>Elon Musk</p>
-          <div class="news-feed__tooltip-page-wrapper">
-            <img src="icons/page-info.png">
-            <p>Page · Public figure</p>
-          </div>
-          <div class="news-feed__tooltip-identity-wrapper">
-            <img src="icons/person.png">
-            <p>Founder, CEO of SpaceX, angel investor, Tesla Inc. CTO of X Corp, the Boring Company.</p>
-          </div>
-          <div class="news-feed__tooltip-location-wrapper">
-            <img src="icons/location.png">
-            <p>California City, CA, United States, California</p>
-          </div>
-          <div class="news-feed__tooltip-followers-wrapper">
-            <img src="icons/followers.png">
-            <p>3.6K Followers</p>
-          </div>
-        </div>
-      </div>
-      <div><button>Message</button></div>
-      <div><button>Like</button></div>
-      <button>&bull;&bull;&bull;</button>
-    </div> 
   </main>
 </body>
 </html>
