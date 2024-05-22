@@ -111,12 +111,20 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
 }
 
-.stories__profile-pic-wrapper {
-  background-color: #206eff;
-  display: inline-block;
-  padding-top: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
+.stories__not-seen {
+  width: 34px;
+  height: 34px;
+  box-shadow: 0 0 0 4px blue;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.stories__seen {
+  width: 34px;
+  height: 34px;
+  box-shadow: 0 0 0 4px white;
   border-radius: 50%;
   position: absolute;
   top: 10px;
@@ -201,7 +209,6 @@
   box-sizing: border-box;
   padding: 8px 12px;
   margin-left: 7px;
-  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
@@ -231,9 +238,9 @@
   background-color: #f0f0f0;
 }
 
-.status-update__media-icon {
+/* .status-update__media-icon {
   width: 24px;
-}
+} */
 
 .status-update__media-text {
   font-size: 14px;
@@ -247,9 +254,16 @@
 /* Facebook News Feed Feature */
 
 .news-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 13px;
+}
+
+.news-feed-section {
   background-color: #fff;
   width: 500px;
-  margin-top: 13px;
+  /* margin-top: 13px; */
   padding: 2px 0;
   border-radius: 7px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -288,14 +302,30 @@
 }
 
 .news-feed__author-image {
-  width: 40px;
+  width: 38px;
   border-radius: 50%;
   cursor: pointer;
 }
 
+.news-feed__second-author-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  border-radius: 50%; /* Makes the image circular */
+}
+
+.news-feed__second-author-image-wrapper {
+  width: 34px; /* Adjust size as needed */
+  height: 34px; /* Adjust size as needed */
+  border: 2px solid #fff; /* Outline color and thickness */
+  border-radius: 50%; /* Makes the outline circular */
+  box-shadow: 0 0 0 2.5px rgb(196, 194, 194); /* Additional outer outline, adjust color and thickness as needed */
+  overflow: hidden; /* Ensures the image doesn't overflow the container */
+}
+
 .news-feed__author-name {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
   transition: text-decoration 0.3s ease;
 }
@@ -373,15 +403,36 @@
   z-index: 2;
 }
 
+.news-feed__wow-icon {
+  left: 0;
+  z-index: 3;
+}
+
 .news-feed__like-icon {
-  left: 18px;
+  left: 19px;
   z-index: 1;
+}
+
+.news-feed__second-like-icon {
+  left: 36px;
+  z-index: 1;
+}
+
+.news-feed__heart-icon {
+  left: 18px;
+  z-index: 2;
 }
 
 .news-feed__reaction-count {
   font-size: 15px;
   color: gray;
-  margin-left: 36px;
+  margin-left: 38px;
+}
+
+.news-feed__second-reaction-count {
+  font-size: 15px;
+  color: gray;
+  margin-left: 57px;
 }
 
 .news-feed__engagement-details {
@@ -413,6 +464,8 @@
   justify-content: space-around;
   padding: 5px 0;
   border-top: 1px solid #e0e0e0;
+  margin: 0 15px 0 15px;
+
 }
 
 .news-feed__interaction-option {
@@ -433,10 +486,127 @@
   width: 20px;
 }
 
+.news-feed__interaction-option .news-feed__love {
+  color: red;
+}
+
 .news-feed__interaction-option p {
   font-size: 14px;
   font-weight: 500;
   color: gray;
+}
+
+.news-feed__comment-profile-wrapper {
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+.news-feed__current-author-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.news-feed__change-profile-wrapper {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+}
+
+.news-feed__profiles {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.news-feed__comment-section {
+  border-top: 1px solid #e0e0e0;
+  padding: 10px 0 10px 0;
+  margin: 0 15px 0 15px;
+}
+
+.news-feed__view-comments {
+  color: gray;
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: text-decoration 0.3s ease;
+}
+
+.news-feed__view-comments:hover {
+  text-decoration: underline;
+}
+
+.news-feed__comment-section-input {
+  display: flex;
+  align-items: center;
+}
+
+.news-feed__comment-profile-wrapper {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.news-feed__comment-input-wrapper {
+  width: 430px;
+  position: relative;
+}
+
+.news-feed__comment-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 25px 10px 10px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(240, 240, 240);
+}
+
+.news-feed__icon {
+  width: 16px;
+  height: 16px;
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/i1oxHyWGI67.png?_nc_eui2=AeEOIOsLcmvKmhAn9ur924UXSVqOWYcv1UBJWo5Zhy_VQFDjm_deL8pS3k8RccyXdMiGmUksSjsWbil4_p9Mu33Z);
+  /* background-image: url(../icons/icons.png); */
+  background-size: 25px 1427px; 
+  background-repeat: no-repeat; 
+  display: inline-block;
+  cursor: pointer;
+}
+
+.news-feed__comment-options-wrapper {
+  display: flex;
+  position: absolute;
+  transform: translateY(-50%);
+  bottom: 0;
+  right: 10px;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar-sticker {
+  background-position: 0px -1078px;
+}
+
+.insert-emoji {
+  background-position: 0px -1163px; 
+}
+
+.attached-photo {
+  background-position: 0px -1112px; 
+}
+
+.comment-gif {
+  background-position: 0px -1197px; 
+}
+
+.comment-sticker {
+  background-position: 0px -1316px; 
 }
 
 .news-feed__tooltip {
