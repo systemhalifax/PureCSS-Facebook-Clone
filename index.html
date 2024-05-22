@@ -12,7 +12,7 @@
 </head>
 <body>
   <main>
-    <!-- Facebook Story Feature -->
+    <!-- Facebook Stories Feature -->
     <section class="stories">
       <div class="stories__create">
         <div class="stories__user-image-wrapper">
@@ -29,21 +29,21 @@
       </div>
       <div class="stories__item">
         <img class="stories__content-image" src="story-images/beach.jpg">
-        <div class="stories__profile-pic-wrapper">
+        <div class="stories__seen">
           <img class="stories__profile-pic" src="images/mary-chris-anne.jpg">
         </div>
         <div class="stories__profile-name">Mary Chris Anne Doromal</div>
       </div>
       <div class="stories__item">
         <img class="stories__content-image" src="story-images/lamborghini.jpg">
-        <div class="stories__profile-pic-wrapper">
+        <div class="stories__not-seen">
           <img class="stories__profile-pic" src="images/jane-doe.jpg">
         </div>
         <div class="stories__profile-name">Jane Doe</div>
       </div>
       <div class="stories__item">
         <img class="stories__content-image" src="story-images/passport.jpg">
-        <div class="stories__profile-pic-wrapper">
+        <div class="stories__not-seen">
           <img class="stories__profile-pic" src="images/john-doe.jpg">
         </div>
         <div class="stories__next-wrapper">
@@ -53,6 +53,7 @@
       </div>
     </section>
 
+
     <!-- Facebook Status Update Feature -->
     <section class="status-update">
       <div class="status-update__wrapper">
@@ -61,20 +62,446 @@
       </div>
       <div class="status-update__media-items">
         <div class="status-update__media-item">
-          <img class="status-update__media-icon" src="icons/video-camera.svg">
+          <img class="status-update__media-icon" src="icons/video-camera.png">
           <p class="status-update__media-text">Live video</p>
         </div>
         <div class="status-update__media-item">
-          <img class="status-update__media-icon" src="icons/gallery.svg">
+          <img class="status-update__media-icon" src="icons/gallery.png">
           <p class="status-update__media-text">Photo/video</p>
         </div>
         <div class="status-update__media-item">
-          <img class="status-update__media-icon" src="icons/emojis.svg">
+          <img class="status-update__media-icon" src="icons/emojis.png">
           <p class="status-update__media-text">Feeling/activity</p>
         </div>
       </div>
     </section>
 
+
+    <!-- Facebook News Feed Feature -->
+    <section class="news-feed">
+      <div class="news-feed__section">
+        <div class="news-feed__header">
+          <div class="news-feed__author-info">
+            <div class="news-feed__author-image-wrapper">
+              <img class="news-feed__author-image" src="images/elon-musk.jpg" alt="Author Image">
+              <div class="news-feed__tooltip">
+                <div class="news-feed__tooltip-info">
+                  <img class="news-feed__tooltip-author-image" src="images/elon-musk.jpg" alt="Author Image">
+                  <div class="news-feed__tooltip-details">
+                    <p class="news-feed__tooltip-author-name">Elon Musk</p>
+                    <div class="news-feed__tooltip-details-item">
+                      <img class="news-feed__tooltip-icon" src="icons/page-info.png" alt="Page Info Icon">
+                      <p><span class="news-feed__tooltip-label">Page</span> · Public figure</p>
+                    </div>
+                    <div class="news-feed__tooltip-details-item tooltip__details-text">
+                      <img class="news-feed__tooltip-icon" src="icons/person.png" alt="Person Icon">
+                      <p>Founder, CEO of SpaceX, angel investor, Tesla Inc. CTO of X Corp, the Boring Company.</p>
+                    </div>
+                    <div class="news-feed__tooltip-details-item tooltip__details-text">
+                      <img class="news-feed__tooltip-icon" src="icons/location.png" alt="Location Icon">
+                      <p>California City, CA, United States, California</p>
+                    </div>
+                    <div class="news-feed__tooltip-details-item">
+                      <img class="news-feed__tooltip-icon" src="icons/followers.png" alt="Followers Icon">
+                      <span class="news-feed__tooltip-label">183.4M Followers</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-feed__tooltip-actions">
+                  <div class="news-feed__tooltip-action">
+                    <button class="news-feed__tooltip-button news-feed__tooltip-button--liked">Liked</button>
+                    <div class="news-feed__tooltip-icon-wrapper">
+                      <img class="news-feed__tooltip-like-icon" src="icons/like.png" alt="Like Icon">
+                    </div>
+                  </div>
+                  <div class="news-feed__tooltip-action">
+                    <button class="news-feed__tooltip-button news-feed__tooltip-button--message">Message</button>
+                    <div class="news-feed__tooltip-message-wrapper">
+                      <img class="news-feed__tooltip-message-icon" src="icons/messenger.svg" alt="Messenger Icon">
+                    </div>
+                  </div>
+                  <button class="news-feed__tooltip-button news-feed__tooltip-button--more">&bull;&bull;&bull;</button>
+                </div>
+              </div>
+            </div>
+            <div class="news-feed__author-details">
+              <div class="news-feed__author-name-wrapper">
+                <p class="news-feed__author-name">Elon Musk</p>
+                <img class="news-feed__verified-icon" src="icons/verified.svg" alt="Verified Icon">
+              </div>
+              <div class="news-feed__date">
+                <p class="news-feed__date-text">May 10 at 12:47 PM ·</p>
+                <img class="news-feed__date-icon" src="icons/earth-america.svg" alt="Date Icon">
+              </div>
+            </div>
+          </div>
+          <div class="news-feed__post-options">
+            <img class="news-feed__action-icon news-feed__save-icon" src="icons/save-post.svg" alt="Save Icon">
+            <img class="news-feed__action-icon news-feed__hide-icon" src="icons/hide-post.svg" alt="Hide Icon">
+          </div>
+        </div>
+        <p class="news-feed__caption">How the Federal Reserve works</p>
+        <img class="news-feed__image" src="news-feed-images/monopoly.jpg" alt="Content Image">
+        <div class="news-feed__engagement">
+          <div class="news-feed__reactions">
+            <div class="news-feed__reaction-icons">
+              <img class="news-feed__reaction-icon news-feed__laughing-icon" src="icons/laughing-emoji.svg" alt="Laughing Emoji">
+              <img class="news-feed__reaction-icon news-feed__like-icon" src="icons/likes.svg" alt="Likes Emoji">
+            </div>
+            <p class="news-feed__reaction-count">87K</p>
+          </div>
+          <div class="news-feed__engagement-details">
+            <div class="news-feed__comments">
+              <p class="news-feed__comments-count">5k</p>
+              <img class="news-feed__comments-icon" src="icons/comments-count.svg" alt="Comments Icon">
+            </div>
+            <div class="news-feed__shares">
+              <p class="news-feed__shares-count">14K</p>
+              <img class="news-feed__shares-icon" src="icons/share-count.svg" alt="Shares Icon">
+            </div>
+          </div>
+        </div>
+        <div class="news-feed__interaction-options">
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/like.svg" alt="Like Icon">
+            <p>Like</p>
+          </div>
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/comment.svg" alt="Comment Icon">
+            <p>Comment</p>
+          </div>
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/copy.svg" alt="Copy Icon">
+            <p>Copy</p>
+          </div>
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/share.svg" alt="Share Icon">
+            <p>Share</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-feed__section">
+        <div class="news-feed__header">
+          <div class="news-feed__author-info">
+            <div class="news-feed__second-author-image-wrapper">
+              <img class="news-feed__second-author-image" src="images/mary-chris-anne.jpg" alt="Author Image">
+            </div>
+            <div class="news-feed__author-details">
+              <div class="news-feed__author-name-wrapper">
+                <p class="news-feed__author-name">Mary Chris Anne Doromal</p>
+              </div>
+              <div class="news-feed__date">
+                <p class="news-feed__date-text">3 days ago ·</p>
+                <img class="news-feed__date-icon" src="icons/earth-america.svg" alt="Date Icon">
+              </div>
+            </div>
+          </div>
+          <div class="news-feed__post-options">
+            <img class="news-feed__action-icon news-feed__save-icon" src="icons/save-post.svg" alt="Save Icon">
+            <img class="news-feed__action-icon news-feed__hide-icon" src="icons/hide-post.svg" alt="Hide Icon">
+          </div>
+        </div>
+        <p class="news-feed__caption">Ladies and Gentlemen,<br><br>
+
+          Welcome to the grand opening of Anne's Coastal Haven, an epitome of luxury and tranquility nestled in the heart of Palm Beach. We are delighted to have you join us as we unveil this exquisite sanctuary, where the serene beauty of the coast meets unparalleled elegance. Every detail at Anne's Coastal Haven has been thoughtfully curated to provide a sublime experience, from our world-class spa to our opulent accommodations. This weekend marks the beginning of a new era in refined relaxation. Thank you for being here to celebrate with us. Enjoy the exceptional service and enchanting atmosphere of Anne's Coastal Haven.🌴🌊💆‍♀️</p>
+        <img class="news-feed__image" src="news-feed-images/resort.webp" alt="Content Image">
+        <div class="news-feed__engagement">
+          <div class="news-feed__reactions">
+            <div class="news-feed__reaction-icons">
+              <img class="news-feed__reaction-icon news-feed__second-like-icon" src="icons/likes.svg" alt="Likes Emoji">
+              <img class="news-feed__reaction-icon news-feed__heart-icon" src="icons/heart.svg" alt="Heart Emoji">
+              <img class="news-feed__reaction-icon news-feed__wow-icon" src="icons/wow.svg" alt="Wow Emoji">
+            </div>
+            <p class="news-feed__second-reaction-count">You, Jane Doe and 37K others</p>
+          </div>
+          <div class="news-feed__engagement-details">
+            <div class="news-feed__comments">
+              <p class="news-feed__comments-count">5k</p>
+              <img class="news-feed__comments-icon" src="icons/comments-count.svg" alt="Comments Icon">
+            </div>
+            <div class="news-feed__shares">
+              <p class="news-feed__shares-count">14K</p>
+              <img class="news-feed__shares-icon" src="icons/share-count.svg" alt="Shares Icon">
+            </div>
+          </div>
+        </div>
+        <div class="news-feed__interaction-options">
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/heart.svg" alt="Love Icon">
+            <p class="news-feed__love">Love</p>
+          </div>
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/comment.svg" alt="Comment Icon">
+            <p>Comment</p>
+          </div>
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/copy.svg" alt="Copy Icon">
+            <p>Copy</p>
+          </div>
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/share.svg" alt="Share Icon">
+            <p>Share</p>
+          </div>
+        </div>
+        <div class="news-feed__comment-section">
+          <p class="news-feed__view-comments">View more comments</p>
+          <div class="news-feed__comments-wrapper">
+            <img class="news-feed__current-author-image" src="/images/myprofilepicture.jpg">
+            <div class="news-feed__comment">
+              <div class="news-feed__author-comment">
+                <p class="news-feed__comment-author-name">Reinhard Kent</p>
+                <p class="news-feed__comment-text">Congratulations!
+                </p>
+              </div>
+              <div class="news-feed__like-or-reply-wrapper">
+                <div class="news-feed__like-or-reply">
+                  <p>3d</p>
+                  <p>Like</p>
+                  <p>Reply</p>
+                </div>
+                <img class="news-feed__comment-reaction" src="icons/heart.svg">
+              </div>
+            </div>
+          </div>
+          <div class="news-feed__comment-section-input">
+            <div class="news-feed__comment-profile-wrapper">
+              <img class="news-feed__current-author-image" src="/images/myprofilepicture.jpg">
+              <div class="news-feed__change-profile-wrapper">
+                <img class="news-feed__profiles" src="icons/dropdown-comment.svg">
+              </div>
+            </div>
+            <div class="news-feed__comment-input-wrapper">
+              <input class="news-feed__comment-input" type="text" placeholder="Write a comment...">
+              <div class="news-feed__comment-options-wrapper">
+                <div class="news-feed__icon avatar-sticker"></div>
+                <div class="news-feed__icon insert-emoji"></div>
+                <div class="news-feed__icon attached-photo"></div>
+                <div class="news-feed__icon comment-gif"></div>
+                <div class="news-feed__icon comment-sticker"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news-feed__section">
+        <div class="news-feed__header">
+          <div class="news-feed__author-info">
+            <div class="news-feed__third-author-image-wrapper">
+              <img class="news-feed__second-author-image" src="images/jane-doe.jpg" alt="Author Image">
+            </div>
+            <div class="news-feed__author-details">
+              <div class="news-feed__author-name-wrapper">
+                <p class="news-feed__author-name">Jane Doe</p>
+              </div>
+              <div class="news-feed__date">
+                <p class="news-feed__date-text">3 days ago ·</p>
+                <img class="news-feed__date-icon" src="icons/earth-america.svg" alt="Date Icon">
+              </div>
+            </div>
+          </div>
+          <div class="news-feed__post-options">
+            <img class="news-feed__action-icon news-feed__save-icon" src="icons/save-post.svg" alt="Save Icon">
+            <img class="news-feed__action-icon news-feed__hide-icon" src="icons/hide-post.svg" alt="Hide Icon">
+          </div>
+        </div>
+        <p class="news-feed__caption"></p>
+        <div class="news-feed__share">
+          <img class="news-feed__share-image" src="news-feed-images/gala.jpg" alt="Content Image">
+          <div class="news-feed__share-header">
+            <div class="news-feed__author-info">
+              <div class="news-feed__author-image-wrapper">
+                <img class="news-feed__author-image" src="images/self-love.jpg" alt="Author Image">
+              </div>
+              <div class="news-feed__author-details">
+                <div class="news-feed__author-name-wrapper">
+                  <p class="news-feed__author-name">Self Love</p>
+                </div>
+                <div class="news-feed__date">
+                  <p class="news-feed__date-text">May 10 at 12:47 PM ·</p>
+                  <img class="news-feed__date-icon" src="icons/earth-america.svg" alt="Date Icon">
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="news-feed__share-caption">c; misssssbi</p>
+        </div>
+        <div class="news-feed__engagement">
+          <div class="news-feed__reactions">
+            <div class="news-feed__reaction-icons">
+              <img class="news-feed__reaction-icon news-feed__laughing-icon" src="icons/care.svg" alt="Care Emoji">
+              <img class="news-feed__reaction-icon news-feed__like-icon" src="icons/likes.svg" alt="Likes Emoji">
+            </div>
+            <p class="news-feed__reaction-count">237</p>
+          </div>
+          <div class="news-feed__engagement-details">
+            <div class="news-feed__comments">
+              <p class="news-feed__comments-count">32</p>
+              <img class="news-feed__comments-icon" src="icons/comments-count.svg" alt="Comments Icon">
+            </div>
+            <div class="news-feed__shares">
+              <p class="news-feed__shares-count">5</p>
+              <img class="news-feed__shares-icon" src="icons/share-count.svg" alt="Shares Icon">
+            </div>
+          </div>
+        </div>
+        <div class="news-feed__interaction-options">
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/like.svg" alt="Like Icon">
+            <p>Like</p>
+          </div>
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/comment.svg" alt="Comment Icon">
+            <p>Comment</p>
+          </div>
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/copy.svg" alt="Copy Icon">
+            <p>Copy</p>
+          </div>
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/share.svg" alt="Share Icon">
+            <p>Share</p>
+          </div>
+        </div>
+        <div class="news-feed__comment-section">
+          <p class="news-feed__view-comments">View more comments</p>
+          <div class="news-feed__comments-wrapper">
+            <img class="news-feed__current-author-image" src="/images/jane.webp">
+            <div class="news-feed__comment">
+              <div class="news-feed__author-comment">
+                <p class="news-feed__comment-author-name">Jane Smith</p>
+                <p class="news-feed__comment-text">I couldn't agree more 😘❤
+                </p>
+              </div>
+              <div class="news-feed__like-or-reply-wrapper">
+                <div class="news-feed__like-or-reply">
+                  <p>3d</p>
+                  <p>Like</p>
+                  <p>Reply</p>
+                </div>
+                <img class="news-feed__comment-reaction" src="icons/heart.svg">
+              </div>
+            </div>
+          </div>
+          <div class="news-feed__comment-section-input">
+            <div class="news-feed__comment-profile-wrapper">
+              <img class="news-feed__current-author-image" src="/images/myprofilepicture.jpg">
+              <div class="news-feed__change-profile-wrapper">
+                <img class="news-feed__profiles" src="icons/dropdown-comment.svg">
+              </div>
+            </div>
+            <div class="news-feed__comment-input-wrapper">
+              <input class="news-feed__comment-input" type="text" placeholder="Write a comment...">
+              <div class="news-feed__comment-options-wrapper">
+                <div class="news-feed__icon avatar-sticker"></div>
+                <div class="news-feed__icon insert-emoji"></div>
+                <div class="news-feed__icon attached-photo"></div>
+                <div class="news-feed__icon comment-gif"></div>
+                <div class="news-feed__icon comment-sticker"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news-feed__section">
+        <div class="news-feed__header">
+          <div class="news-feed__author-info">
+            <div class="news-feed__third-author-image-wrapper">
+              <img class="news-feed__second-author-image" src="images/john-doe.jpg" alt="Author Image"> 
+            </div>
+            <div class="news-feed__author-details">
+              <div class="news-feed__author-name-wrapper">
+                <p class="news-feed__author-name">John Doe</p>
+              </div>
+              <div class="news-feed__date">
+                <p class="news-feed__date-text">May 10 at 12:47 PM ·</p>
+                <img class="news-feed__date-icon" src="icons/earth-america.svg" alt="Date Icon">
+              </div>
+            </div>
+          </div>
+          <div class="news-feed__post-options">
+            <img class="news-feed__action-icon news-feed__save-icon" src="icons/save-post.svg" alt="Save Icon">
+            <img class="news-feed__action-icon news-feed__hide-icon" src="icons/hide-post.svg" alt="Hide Icon">
+          </div>
+        </div>
+        <p class="news-feed__caption">Rev up your engines and join us at the ultimate car extravaganza! 🚗💨 <span>#CarShowtime</span></p>
+        <img class="news-feed__image" src="news-feed-images/Check-out-the-latest-car-models-at-MIAS-2022-and-auto-loan-offerings-from-BPI.webp" alt="Content Image">
+        <div class="news-feed__engagement">
+          <div class="news-feed__reactions">
+            <div class="news-feed__reaction-icons">
+              <img class="news-feed__reaction-icon news-feed__laughing-icon" src="icons/wow.svg" alt="Wow Emoji">
+              <img class="news-feed__reaction-icon news-feed__like-icon" src="icons/likes.svg" alt="Likes Emoji">
+            </div>
+            <p class="news-feed__reaction-count"></p>
+          </div>
+          <div class="news-feed__engagement-details">
+            <div class="news-feed__comments">
+              <p class="news-feed__comments-count">107</p>
+              <img class="news-feed__comments-icon" src="icons/comments-count.svg" alt="Comments Icon">
+            </div>
+            <div class="news-feed__shares">
+              <p class="news-feed__shares-count">50</p>
+              <img class="news-feed__shares-icon" src="icons/share-count.svg" alt="Shares Icon">
+            </div>
+          </div>
+        </div>
+        <div class="news-feed__interaction-options">
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/wow.svg" alt="Wow Icon">
+            <p class="news-feed__wow">Wow</p>
+          </div>
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/comment.svg" alt="Comment Icon">
+            <p>Comment</p>
+          </div>
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/copy.svg" alt="Copy Icon">
+            <p>Copy</p>
+          </div>
+          <div class="news-feed__interaction-option">
+            <img class="news-feed__interaction-icon" src="icons/share.svg" alt="Share Icon">
+            <p>Share</p>
+          </div>
+        </div>
+        <div class="news-feed__comment-section">
+          <p class="news-feed__view-comments">View more comments</p>
+          <div class="news-feed__comments-wrapper">
+            <img class="news-feed__current-author-image" src="/images/myprofilepicture.jpg">
+            <div class="news-feed__comment">
+              <div class="news-feed__author-comment">
+                <p class="news-feed__comment-author-name">Reinhard Kent</p>
+                <p class="news-feed__comment-text">Awesome!
+                </p>
+              </div>
+              <div class="news-feed__like-or-reply-wrapper">
+                <div class="news-feed__like-or-reply">
+                  <p>3d</p>
+                  <p>Like</p>
+                  <p>Reply</p>
+                </div>
+                <img class="news-feed__comment-reaction" src="icons/likes.svg">
+              </div>
+            </div>
+          </div>
+          <div class="news-feed__comment-section-input">
+            <div class="news-feed__comment-profile-wrapper">
+              <img class="news-feed__current-author-image" src="/images/myprofilepicture.jpg">
+              <div class="news-feed__change-profile-wrapper">
+                <img class="news-feed__profiles" src="icons/dropdown-comment.svg">
+              </div>
+            </div>
+            <div class="news-feed__comment-input-wrapper">
+              <input class="news-feed__comment-input" type="text" placeholder="Write a comment...">
+              <div class="news-feed__comment-options-wrapper">
+                <div class="news-feed__icon avatar-sticker"></div>
+                <div class="news-feed__icon insert-emoji"></div>
+                <div class="news-feed__icon attached-photo"></div>
+                <div class="news-feed__icon comment-gif"></div>
+                <div class="news-feed__icon comment-sticker"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
