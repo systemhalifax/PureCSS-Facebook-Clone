@@ -5,6 +5,7 @@
   grid-template-columns: repeat(4, 140.625px); /* Four columns with specific width */
   grid-auto-rows: 252px; /* Rows with specific height */
   column-gap: 8px;
+  margin-right: 75px; /*temporary margin*/
 }
 
 .stories__create {
@@ -174,19 +175,21 @@
 
 .status-update {
   background-color: #fff;
-  margin-top: 37px;
+  margin-top: 20px;
   width: 500px;
   border-radius: 7px;
+  margin-right: 75px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .status-update__wrapper {
   display: flex;
   align-items: center;
-  margin: 20px 15px 5px;
-  width: calc(100% - 30px);
+  width: calc(100% - 40px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 15px;
   border-bottom: 1px solid #e0e0e0;
-  padding: 12px 0;
 }
 
 .status-update__profile-pic {
@@ -226,7 +229,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 10px;
+  margin: 8px 0;
   cursor: pointer;
   padding-left: 23px;
   padding-right: 23px;
@@ -257,6 +260,7 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
+  margin-right: 75px;
   margin-top: 13px;
 }
 
