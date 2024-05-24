@@ -7,10 +7,67 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/timeline.css">
+  <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/general.css">
   <title>Facebook Clone</title>
 </head>
 <body>
+  <header class="header">
+    <!-- Header Left Section -->
+    <div class="header__left">
+      <img class="header__logo" alt="Facebook Logo" src="icons/facebook-logo.svg">
+      <div class="header__search-wrapper">
+        <input class="header__search-input" type="text" placeholder="Search Facebook">
+        <div class="header__search-icon-wrapper">
+          <img class="header__search-icon" alt="Search" src="icons/search.svg">
+        </div>
+      </div>
+    </div>
+  
+    <!-- Header Middle Section -->
+    <div class="header__middle">
+      <div class="header__home-wrapper">
+        <div class="header__home-icon"></div>
+      </div>
+      <div class="header__nav-icon-wrapper">
+        <img class="header__nav-icon" src="icons/friends.svg" alt="Friends">
+        <div class="header__tooltip">Friends</div>
+      </div>
+      <div class="header__nav-icon-wrapper">
+        <img class="header__nav-icon" src="icons/video.svg" alt="Video">
+        <div class="header__tooltip">Video</div>
+      </div>
+      <div class="header__nav-icon-wrapper">
+        <img class="header__nav-icon" src="icons/groups.svg" alt="Groups">
+        <div class="header__tooltip">Groups</div>
+      </div>
+      <div class="header__nav-icon-wrapper">
+        <img class="header__nav-icon" src="icons/gaming.svg" alt="Gaming">
+        <div class="header__tooltip">Gaming</div>
+      </div>
+    </div>
+  
+    <!-- Header Right Section -->
+    <div class="header__right">
+      <div class="header__action-icon-wrapper">
+        <img class="header__action-icon" alt="Menu" src="icons/menu.svg">
+        <div class="header__tooltip">Menu</div>
+      </div>
+      <div class="header__action-icon-wrapper">
+        <img class="header__action-icon" alt="Messenger" src="icons/messaging.svg">
+        <div class="header__tooltip">Messenger</div>
+      </div>
+      <div class="header__action-icon-wrapper">
+        <img class="header__action-icon" alt="Notifications" src="icons/notifications.svg">
+        <div class="header__tooltip">Notifications</div>
+      </div>
+      <div class="header__action-icon-wrapper">
+        <img class="header__profile-picture" alt="Profile Picture" src="images/myprofilepicture.jpg">
+        <div class="header__tooltip">Account</div>
+      </div>
+    </div>
+  </header>
+
   <main>
     <!-- Facebook Stories Feature -->
     <section class="stories">
