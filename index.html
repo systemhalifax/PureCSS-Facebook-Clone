@@ -7,10 +7,67 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/timeline.css">
+  <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/general.css">
   <title>Facebook Clone</title>
 </head>
 <body>
+  <header class="header">
+    <!-- Header Left Section -->
+    <div class="header__left">
+      <img class="header__logo" alt="Facebook Logo" src="icons/facebook-logo.svg">
+      <div class="header__search-wrapper">
+        <input class="header__search-input" type="text" placeholder="Search Facebook">
+        <div class="header__search-icon-wrapper">
+          <img class="header__search-icon" alt="Search" src="icons/search.svg">
+        </div>
+      </div>
+    </div>
+  
+    <!-- Header Middle Section -->
+    <div class="header__middle">
+      <div class="header__home-wrapper">
+        <div class="header__home-icon"></div>
+      </div>
+      <div class="header__nav-icon-wrapper">
+        <img class="header__nav-icon" src="icons/friends.svg" alt="Friends">
+        <div class="header__tooltip">Friends</div>
+      </div>
+      <div class="header__nav-icon-wrapper">
+        <img class="header__nav-icon" src="icons/video.svg" alt="Video">
+        <div class="header__tooltip">Video</div>
+      </div>
+      <div class="header__nav-icon-wrapper">
+        <img class="header__nav-icon" src="icons/groups.svg" alt="Groups">
+        <div class="header__tooltip">Groups</div>
+      </div>
+      <div class="header__nav-icon-wrapper">
+        <img class="header__nav-icon" src="icons/gaming.svg" alt="Gaming">
+        <div class="header__tooltip">Gaming</div>
+      </div>
+    </div>
+  
+    <!-- Header Right Section -->
+    <div class="header__right">
+      <div class="header__action-icon-wrapper">
+        <img class="header__action-icon" alt="Menu" src="icons/menu.svg">
+        <div class="header__tooltip">Menu</div>
+      </div>
+      <div class="header__action-icon-wrapper">
+        <img class="header__action-icon" alt="Messenger" src="icons/messaging.svg">
+        <div class="header__tooltip">Messenger</div>
+      </div>
+      <div class="header__action-icon-wrapper">
+        <img class="header__action-icon" alt="Notifications" src="icons/notifications.svg">
+        <div class="header__tooltip">Notifications</div>
+      </div>
+      <div class="header__action-icon-wrapper">
+        <img class="header__profile-picture" alt="Profile Picture" src="images/myprofilepicture.jpg">
+        <div class="header__tooltip">Account</div>
+      </div>
+    </div>
+  </header>
+
   <main>
     <!-- Facebook Stories Feature -->
     <section class="stories">
@@ -244,35 +301,34 @@
           </div>
         </div>
         <div class="news-feed__comment-section">
-          <p class="news-feed__view-comments">View more comments</p>
-          <div class="news-feed__comments-wrapper">
-            <img class="news-feed__current-author-image" src="/images/myprofilepicture.jpg">
+          <p class="news-feed__view-more-comments">View more comments</p>
+          <div class="news-feed__comment-wrapper">
+            <img class="news-feed__comment-author-image" src="/images/myprofilepicture.jpg" alt="Author image">
             <div class="news-feed__comment">
-              <div class="news-feed__author-comment">
+              <div class="news-feed__comment-content">
                 <p class="news-feed__comment-author-name">Reinhard Kent</p>
-                <p class="news-feed__comment-text">Congratulations!
-                </p>
+                <p class="news-feed__comment-text">Congratulations!</p>
               </div>
-              <div class="news-feed__like-or-reply-wrapper">
-                <div class="news-feed__like-or-reply">
-                  <p>3d</p>
-                  <p>Like</p>
-                  <p>Reply</p>
+              <div class="news-feed__comment-actions">
+                <div class="news-feed__comment-buttons">
+                  <p class="news-feed__comment-time">3d</p>
+                  <p class="news-feed__comment-like">Like</p>
+                  <p class="news-feed__comment-reply">Reply</p>
                 </div>
-                <img class="news-feed__comment-reaction" src="icons/heart.svg">
+                <img class="news-feed__comment-reaction" src="icons/heart.svg" alt="Reaction">
               </div>
             </div>
           </div>
-          <div class="news-feed__comment-section-input">
-            <div class="news-feed__comment-profile-wrapper">
-              <img class="news-feed__current-author-image" src="/images/myprofilepicture.jpg">
-              <div class="news-feed__change-profile-wrapper">
-                <img class="news-feed__profiles" src="icons/dropdown-comment.svg">
+          <div class="news-feed__comment-input-section">
+            <div class="news-feed__profile-image-wrapper">
+              <img class="news-feed__comment-author-image" src="/images/myprofilepicture.jpg" alt="Author image">
+              <div class="news-feed__change-profile">
+                <img class="news-feed__profile-dropdown-icon" src="icons/dropdown-comment.svg" alt="Change profile">
               </div>
             </div>
-            <div class="news-feed__comment-input-wrapper">
-              <input class="news-feed__comment-input" type="text" placeholder="Write a comment...">
-              <div class="news-feed__comment-options-wrapper">
+            <div class="news-feed__input-wrapper">
+              <input class="news-feed__input" type="text" placeholder="Write a comment...">
+              <div class="news-feed__input-options">
                 <div class="news-feed__icon avatar-sticker"></div>
                 <div class="news-feed__icon insert-emoji"></div>
                 <div class="news-feed__icon attached-photo"></div>
@@ -363,35 +419,35 @@
           </div>
         </div>
         <div class="news-feed__comment-section">
-          <p class="news-feed__view-comments">View more comments</p>
-          <div class="news-feed__comments-wrapper">
-            <img class="news-feed__current-author-image" src="/images/jane.webp">
+          <p class="news-feed__view-more-comments">View more comments</p>
+          <div class="news-feed__comment-wrapper">
+            <img class="news-feed__comment-author-image" src="/images/jane.webp">
             <div class="news-feed__comment">
-              <div class="news-feed__author-comment">
+              <div class="news-feed__comment-content">
                 <p class="news-feed__comment-author-name">Jane Smith</p>
                 <p class="news-feed__comment-text">I couldn't agree more 😘❤
                 </p>
               </div>
-              <div class="news-feed__like-or-reply-wrapper">
-                <div class="news-feed__like-or-reply">
-                  <p>3d</p>
-                  <p>Like</p>
-                  <p>Reply</p>
+              <div class="news-feed__comment-actions">
+                <div class="news-feed__comment-buttons">
+                  <p class="news-feed__comment-time">3d</p>
+                  <p class="news-feed__comment-like">Like</p>
+                  <p class="news-feed__comment-reply">Reply</p>
                 </div>
-                <img class="news-feed__comment-reaction" src="icons/heart.svg">
+                <img class="news-feed__comment-reaction" src="icons/heart.svg" alt="Reaction">
               </div>
             </div>
           </div>
-          <div class="news-feed__comment-section-input">
-            <div class="news-feed__comment-profile-wrapper">
-              <img class="news-feed__current-author-image" src="/images/myprofilepicture.jpg">
-              <div class="news-feed__change-profile-wrapper">
-                <img class="news-feed__profiles" src="icons/dropdown-comment.svg">
+          <div class="news-feed__comment-input-section">
+            <div class="news-feed__profile-image-wrapper">
+              <img class="news-feed__comment-author-image" src="/images/myprofilepicture.jpg">
+              <div class="news-feed__change-profile">
+                <img class="news-feed__profile-dropdown-icon" src="icons/dropdown-comment.svg">
               </div>
             </div>
-            <div class="news-feed__comment-input-wrapper">
-              <input class="news-feed__comment-input" type="text" placeholder="Write a comment...">
-              <div class="news-feed__comment-options-wrapper">
+            <div class="news-feed__input-wrapper">
+              <input class="news-feed__input" type="text" placeholder="Write a comment...">
+              <div class="news-feed__input-options">
                 <div class="news-feed__icon avatar-sticker"></div>
                 <div class="news-feed__icon insert-emoji"></div>
                 <div class="news-feed__icon attached-photo"></div>
@@ -463,35 +519,35 @@
           </div>
         </div>
         <div class="news-feed__comment-section">
-          <p class="news-feed__view-comments">View more comments</p>
-          <div class="news-feed__comments-wrapper">
-            <img class="news-feed__current-author-image" src="/images/myprofilepicture.jpg">
+          <p class="news-feed__view-more-comments">View more comments</p>
+          <div class="news-feed__comment-wrapper">
+            <img class="news-feed__comment-author-image" src="/images/myprofilepicture.jpg">
             <div class="news-feed__comment">
-              <div class="news-feed__author-comment">
+              <div class="news-feed__comment-content">
                 <p class="news-feed__comment-author-name">Reinhard Kent</p>
                 <p class="news-feed__comment-text">Awesome!
                 </p>
               </div>
-              <div class="news-feed__like-or-reply-wrapper">
-                <div class="news-feed__like-or-reply">
-                  <p>3d</p>
-                  <p>Like</p>
-                  <p>Reply</p>
+              <div class="news-feed__comment-actions">
+                <div class="news-feed__comment-buttons">
+                  <p class="news-feed__comment-time">3d</p>
+                  <p class="news-feed__comment-like">Like</p>
+                  <p class="news-feed__comment-reply">Reply</p>
                 </div>
-                <img class="news-feed__comment-reaction" src="icons/likes.svg">
+                <img class="news-feed__comment-reaction" src="icons/likes.svg" alt="Reaction">
               </div>
             </div>
           </div>
-          <div class="news-feed__comment-section-input">
-            <div class="news-feed__comment-profile-wrapper">
-              <img class="news-feed__current-author-image" src="/images/myprofilepicture.jpg">
-              <div class="news-feed__change-profile-wrapper">
-                <img class="news-feed__profiles" src="icons/dropdown-comment.svg">
+          <div class="news-feed__comment-input-section">
+            <div class="news-feed__profile-image-wrapper">
+              <img class="news-feed__comment-author-image" src="/images/myprofilepicture.jpg">
+              <div class="news-feed__change-profile">
+                <img class="news-feed__profile-dropdown-icon" src="icons/dropdown-comment.svg">
               </div>
             </div>
-            <div class="news-feed__comment-input-wrapper">
-              <input class="news-feed__comment-input" type="text" placeholder="Write a comment...">
-              <div class="news-feed__comment-options-wrapper">
+            <div class="news-feed__input-wrapper">
+              <input class="news-feed__input" type="text" placeholder="Write a comment...">
+              <div class="news-feed__input-options">
                 <div class="news-feed__icon avatar-sticker"></div>
                 <div class="news-feed__icon insert-emoji"></div>
                 <div class="news-feed__icon attached-photo"></div>
