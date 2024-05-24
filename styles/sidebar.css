@@ -124,23 +124,37 @@ footer a:hover {
 /* Contact List */
 
 .contact-list {
-  border: 1px solid red;
   position: fixed;
   right: 0;
   top: 56px;
   bottom: 0;
   width: 300.500px;
+  padding: 8px 0px 0px;
   overflow-y: scroll;
+}
+
+.contact-list__wrapper {
+  /* padding: 0px 21px; */
+  margin: 0px 0px 14px 21px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #cecece;
 }
 
 .contact-list__options {
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
 }
 
-.contact-list__options p {
+.contact-list__icon-wrapper {
+  margin-left: 4px;
+}
+
+.contact-list__options p,
+.contact-list__group-chat {
   font-size: 16px;
   font-weight: 500;
+  margin-left: 22px;
   color: #65676B;
 }
 
@@ -151,4 +165,27 @@ footer a:hover {
 
 .contact-list__icon {
   width: 20px;
+}
+
+.contact-list__user-profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* padding-left: 21px; */
+  margin-top: 15px;
+}
+
+.contact-list__user-profile-wrapper p {
+  font-size: 14px;
+  color: #050505;
+}
+
+.contact-list__user-profile {
+  width: 28px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contact-list__group-chat {
+  font-size: 16px;
 }
