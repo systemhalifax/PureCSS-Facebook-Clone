@@ -7,6 +7,15 @@
   overflow-y: scroll;
 }
 
+.sidebar-left::-webkit-scrollbar {
+  width: 9px;
+}
+
+.sidebar-left::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: #BCC0C4;
+}
+
 .sidebar-left__items {
   display: flex;
   flex-direction: column;
@@ -93,15 +102,6 @@
   background-image: none;
 }
 
-::-webkit-scrollbar {
-  width: 9px;
-}
-
-::-webkit-scrollbar-thumb {
-  height: 10px;
-  background-color: #BCC0C4;
-}
-
 footer {
   padding: 10px;
   background-color: #f1f1f1;
@@ -118,4 +118,37 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+
+/* Contact List */
+
+.contact-list {
+  border: 1px solid red;
+  position: fixed;
+  right: 0;
+  top: 56px;
+  bottom: 0;
+  width: 300.500px;
+  overflow-y: scroll;
+}
+
+.contact-list__options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-list__options p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #65676B;
+}
+
+.contact-list__icon-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-list__icon {
+  width: 20px;
 }
