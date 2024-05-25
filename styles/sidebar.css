@@ -129,7 +129,7 @@ footer a:hover {
   top: 56px;
   bottom: 0;
   width: 300.500px;
-  padding: 8px 0px 0px;
+  padding: 8px 0px 1px 0px;
   overflow-y: scroll;
 }
 
@@ -150,8 +150,7 @@ footer a:hover {
   margin-left: 4px;
 }
 
-.contact-list__options p,
-.contact-list__group-chat {
+.contact-list__options p {
   font-size: 16px;
   font-weight: 500;
   margin-left: 22px;
@@ -167,7 +166,9 @@ footer a:hover {
   width: 20px;
 }
 
-.contact-list__user-profile-wrapper {
+.contact-list__user-profile-wrapper,
+.contact-list__group-profile-wrapper,
+.contact-list__create-group-wrapper {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -175,17 +176,61 @@ footer a:hover {
   margin-top: 15px;
 }
 
-.contact-list__user-profile-wrapper p {
+.contact-list__create-group-wrapper {
+  margin-left: 5px;
+}
+
+.contact-list__user-profile-wrapper p,
+.contact-list__create-group-wrapper p,
+.contact-list__group-profile-wrapper p  {
   font-size: 14px;
   color: #050505;
 }
 
-.contact-list__user-profile {
+.contact-list__user-profile,
+.contact-list__group-profile {
   width: 28px;
+  height: 28px;
   object-fit: cover;
   border-radius: 50%;
 }
 
 .contact-list__group-chat {
-  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 20px 22px;
+  /* margin-bottom: 22px; */
 }
+
+.contact-list__group-chat > p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #65676B;
+}
+
+/* .contact-list__group-chat > div:nth-child(3) > p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #050505;
+} */
+
+.contact-list__create {
+  width: 20px;
+  height: 20px;
+  background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/cVNsom74H2L.png?_nc_eui2=AeFpbaAOcKdCP-AR7OnK4NBsn0U-hJ3v2x-fRT6Ene_bH8DLPVsXTg5sLKPC_jAp3Jcu5pFNl1D9wV5wPV8bO5kH);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.create-icon {
+  background-position: 0 -200px;
+  box-shadow: 0 0 0 5px #dddddd;
+  border-radius: 50%;
+  background-color: #dddddd;
+  margin: 5px 3px 0 0;
+  /* padding: 8px;
+  background-color: #dddddd; */
+}
+
+/* background-position:0 -200px;background-size:auto;width:20px;height:20px;background-repeat:no-repeat;display:inline-block"></i> */
