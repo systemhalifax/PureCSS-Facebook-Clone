@@ -7,6 +7,15 @@
   overflow-y: scroll;
 }
 
+.sidebar-left::-webkit-scrollbar {
+  width: 9px;
+}
+
+.sidebar-left::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: #BCC0C4;
+}
+
 .sidebar-left__items {
   display: flex;
   flex-direction: column;
@@ -30,7 +39,7 @@
 }
 
 .sidebar-left__icon-wrapper:hover {
-  background-color: #dddddd;
+  background-color: #bebebe;
 }
 
 .sidebar-left__icon {
@@ -93,15 +102,6 @@
   background-image: none;
 }
 
-::-webkit-scrollbar {
-  width: 9px;
-}
-
-::-webkit-scrollbar-thumb {
-  height: 10px;
-  background-color: #BCC0C4;
-}
-
 footer {
   padding: 10px;
   background-color: #f1f1f1;
@@ -118,4 +118,165 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+
+/* Contact List */
+
+.contact-list {
+  position: fixed;
+  right: 0;
+  top: 56px;
+  bottom: 0;
+  width: 300.500px;
+  padding: 8px 0px 1px 0px;
+  overflow-y: scroll;
+}
+
+.contact-list__wrapper {
+  /* padding: 0px 21px; */
+  margin: 0px 0px 14px 13px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #cecece;
+}
+
+.contact-list__options {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.contact-list__icon-wrapper {
+  margin-left: 4px;
+}
+
+.contact-list__options p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 22px;
+  color: #65676B;
+}
+
+.contact-list__icon-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-list__icon {
+  width: 20px;
+}
+
+.contact-list__user-profile-wrapper,
+.contact-list__group-profile-wrapper,
+.contact-list__create-group-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* gap: 12px; */
+  /* padding-left: 21px; */
+  /* margin-top: 15px; */
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.contact-list__create-group-wrapper {
+  margin-left: 5px;
+}
+
+.contact-list__user-profile-wrapper p,
+.contact-list__create-group-wrapper p,
+.contact-list__group-profile-wrapper p  {
+  font-size: 14px;
+  color: #050505;
+}
+
+.contact-list__user-profile-wrapper:hover,
+.contact-list__group-profile-wrapper:hover,
+.contact-list__create-group-wrapper:hover {
+  background-color: #dddddd;
+}
+
+.contact-list__user-profile,
+.contact-list__group-profile {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contact-list__is-active {
+  position: absolute;
+  left: 30px;
+  bottom: 8px;
+  height: 7px;
+  width: 7px;
+  background-color: #31A24C;
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #cccccc;
+}
+
+/* .contact-list__is-active {
+  position: absolute;
+  left: 10px;
+  bottom: -100px;
+  height: 10px;
+  width: 10px;
+  box-shadow: 0 0 0 2.5px #cccccc;
+}
+
+.contact-list__is-active-icon {
+  width: 28px;
+  height: 28px;
+} */
+
+.contact-list__user-profile--has-story {
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 2px #206eff;
+  /* box-shadow: 0 0 0 2.5px #cccccc; */
+  margin-left: -2px;
+}
+
+.contact-list__user-profile--story-seen {
+  box-shadow: 0 0 0 2.5px #cccccc;
+}
+
+.contact-list__group-chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 20px 13px;
+  /* margin-bottom: 22px; */
+}
+
+.contact-list__group-chat > p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #65676B;
+}
+
+/* .contact-list__group-chat > div:nth-child(3) > p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #050505;
+} */
+
+.contact-list__create {
+  width: 20px;
+  height: 20px;
+  background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/cVNsom74H2L.png?_nc_eui2=AeFpbaAOcKdCP-AR7OnK4NBsn0U-hJ3v2x-fRT6Ene_bH8DLPVsXTg5sLKPC_jAp3Jcu5pFNl1D9wV5wPV8bO5kH);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.create-icon {
+  background-position: 0 -200px;
+  box-shadow: 0 0 0 5px #bebebe;
+  border-radius: 50%;
+  background-color: #bebebe;
+  margin: 5px 3px 0 0;
+  /* padding: 8px;
+  background-color: #dddddd; */
 }
