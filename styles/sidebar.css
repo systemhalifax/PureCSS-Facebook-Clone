@@ -195,6 +195,17 @@ footer a:hover {
   border-radius: 50%;
 }
 
+.contact-list__user-profile--has-story {
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 2px #206eff;
+  /* box-shadow: 0 0 0 2.5px #cccccc; */
+  margin-left: -2px;
+}
+
+.contact-list__user-profile--story-seen {
+  box-shadow: 0 0 0 2.5px #cccccc;
+}
+
 .contact-list__group-chat {
   display: flex;
   flex-direction: column;
