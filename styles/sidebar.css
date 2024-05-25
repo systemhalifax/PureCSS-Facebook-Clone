@@ -39,7 +39,7 @@
 }
 
 .sidebar-left__icon-wrapper:hover {
-  background-color: #dddddd;
+  background-color: #bebebe;
 }
 
 .sidebar-left__icon {
@@ -135,7 +135,7 @@ footer a:hover {
 
 .contact-list__wrapper {
   /* padding: 0px 21px; */
-  margin: 0px 0px 14px 21px;
+  margin: 0px 0px 14px 13px;
   padding-bottom: 14px;
   border-bottom: 1px solid #cecece;
 }
@@ -172,9 +172,13 @@ footer a:hover {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 12px;
+  /* gap: 12px; */
   /* padding-left: 21px; */
-  margin-top: 15px;
+  /* margin-top: 15px; */
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 10px;
 }
 
 .contact-list__create-group-wrapper {
@@ -188,7 +192,9 @@ footer a:hover {
   color: #050505;
 }
 
-.contact-list__user-profile-wrapper:hover {
+.contact-list__user-profile-wrapper:hover,
+.contact-list__group-profile-wrapper:hover,
+.contact-list__create-group-wrapper:hover {
   background-color: #dddddd;
 }
 
@@ -202,8 +208,8 @@ footer a:hover {
 
 .contact-list__is-active {
   position: absolute;
-  left: 22px;
-  bottom: 0;
+  left: 30px;
+  bottom: 8px;
   height: 7px;
   width: 7px;
   background-color: #31A24C;
@@ -241,7 +247,7 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 0 20px 22px;
+  padding: 0 0 20px 13px;
   /* margin-bottom: 22px; */
 }
 
@@ -267,9 +273,9 @@ footer a:hover {
 
 .create-icon {
   background-position: 0 -200px;
-  box-shadow: 0 0 0 5px #dddddd;
+  box-shadow: 0 0 0 5px #bebebe;
   border-radius: 50%;
-  background-color: #dddddd;
+  background-color: #bebebe;
   margin: 5px 3px 0 0;
   /* padding: 8px;
   background-color: #dddddd; */
