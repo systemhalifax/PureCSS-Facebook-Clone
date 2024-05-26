@@ -131,6 +131,7 @@ footer a:hover {
   width: 300.500px;
   padding: 8px 0px 1px 0px;
   overflow-y: scroll;
+  background-color: #F0F2F5;
 }
 
 .contact-list__wrapper {
@@ -215,7 +216,7 @@ footer a:hover {
   background-color: #31A24C;
   border: 1px solid white;
   border-radius: 50%;
-  box-shadow: 0 0 0 1px #cccccc;
+  box-shadow: 0 0 0 1px white;
 }
 
 /* .contact-list__is-active {
